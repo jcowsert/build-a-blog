@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>build-a-blog</title>
+    </head>
+    <style type="text/css">
+    body {
+        font-family: sans-serif;
+        width: :800px;
+        margin: 0 auto;
+        padding: 10px;
+        }
+    .error {
+        color: red;
+    }
+
+    label {
+        display: block;
+        font-size: 20px
+    }
+
+    input[type=text] {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    textarea {
+        width: 400px;
+        height:200px;
+        font-size: 17px;
+    }
+
+    input[type=submit] {
+        font-size:24px
+    }
+
+    .blog + .blog {
+        margin-top: 20px;
+    }
+
+    .blog-title {
+        font-weight: bold;
+        font-size: 50px
+    }
+
+    .blog-content {
+        margin-top: 50px;
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+
+    </style>
+    <body>
+        <h1>My Blog</h1>
+        <div id ="main_content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
